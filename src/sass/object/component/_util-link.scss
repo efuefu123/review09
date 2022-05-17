@@ -1,0 +1,20 @@
+.c-util-link {
+	text-align: center;
+}
+.c-util-link__link {
+	line-height: 1.1667;
+	font-size: rem(12);
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	vertical-align: middle;
+	@include mq('tab') {
+		font-size: rem(21);
+	}
+}
+
+/* pcの電話番号発信対応 */
+a[href^='tel:'] {
+	@include mq('tab') {
+		pointer-events: none;
+	}
+}

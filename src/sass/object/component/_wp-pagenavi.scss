@@ -1,0 +1,27 @@
+.wp-pagenavi {
+	margin-top: rem(30);
+	display: flex;
+	justify-content: center;
+	@include mq('tab') {
+		margin-top: rem(77);
+	}
+}
+// .p-news__pageNation {
+.wp-pagenavi a,
+.wp-pagenavi span {
+	display: block;
+	background-color: #8388aa;
+	color: #fff;
+	font-size: rem(16);
+	padding: rem(3) rem(17) rem(7);
+	border-radius: rem(3);
+	@include mq('tab') {
+		font-size: rem(14);
+	}
+}
+// .p-news__pageNation:not(:last-child) {
+// 	margin-right: rem(5);
+// }
+.wp-pagenavi span.current {
+	background-color: $primary-color;
+}

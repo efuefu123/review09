@@ -1,0 +1,63 @@
+.p-company-greetings {
+	margin: 0 auto;
+	max-width: rem(500);
+	@include mq('tab') {
+		max-width: rem(1100);
+		width: 100%;
+	}
+}
+.p-company-greetings-ja {
+	font-size: rem(24);
+	text-align: center;
+	@include mq('tab') {
+		font-size: rem(36);
+	}
+}
+.p-company-greetings-en {
+	margin-top: rem(4);
+	text-align: center;
+	@include mq('tab') {
+		margin-top: rem(8);
+	}
+}
+.p-company-greetings__image-wrapper {
+	margin-top: rem(23);
+	text-align: center;
+	margin: 0 calc(50% - 50vw);
+	width: 100vw;
+	@include mq('tab') {
+		margin-top: rem(166);
+		margin: 0;
+		width: 100%;
+	}
+}
+.p-company-greetings__image {
+	@include mq('tab') {
+		width: 100%;
+		border: rem(1) solid #707070;
+	}
+}
+.p-company-greetings__text {
+	margin-top: rem(30);
+	font-size: rem(12);
+	line-height: 2;
+	@include mq('tab') {
+		padding: 0 rem(103);
+		margin-top: rem(75);
+		font-size: rem(20);
+		letter-spacing: 0.05em;
+		line-height: 1.9;
+	}
+}
+.p-company-greetings__text:nth-of-type(n + 3) {
+	margin-top: rem(20);
+	@include mq('tab') {
+		margin-top: rem(45);
+	}
+}
+.p-company-greetings__text:last-of-type {
+	margin-top: rem(35);
+	@include mq('tab') {
+		margin-top: rem(84);
+	}
+}

@@ -1,0 +1,186 @@
+
+.p-service-detail__area {
+	background-color: #fff;
+	padding: rem(40) rem(33) rem(46);
+	background-image: url(../images/common/blueline_bottomright.png);
+	background-position: right -12% bottom -2.5%;
+	background-repeat: no-repeat;
+	background-size: 60% rem(60);
+	text-align: center;
+	margin: 0 auto;
+	max-width: rem(500);
+	width: 100%;
+	@include mq('tab') {
+		max-width: rem(1100);
+		padding: 0 rem(162) rem(74) rem(152);
+		background-position: right -12% bottom -11%;
+		background-size: 60% rem(150);
+	}
+}
+.p-service-detail__area:nth-child(2n) {
+	margin-top: rem(33);
+	@include mq('tab') {
+		margin-top: rem(60);
+	}
+}
+.p-service-detail__content {
+	max-width: rem(500);
+	width: 100%;
+	margin: 0 auto;
+	@include mq('tab') {
+		max-width: rem(796);
+	}
+}
+.p-service-detail__subtitle {
+	font-size: rem(14);
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	line-height: 3;
+	color: #0a0666;
+	text-align: left;
+	position: relative;
+	@include mq('tab') {
+		font-size: rem(20);
+		line-height: 1.5;
+		color: #11132a;
+		padding-top: rem(75);
+	}
+}
+.p-service-detail__subtitle::before {
+	@include mq('tab') {
+		position: absolute;
+		content: '';
+		height: rem(2);
+		width: 100%;
+		background-color: #0a0666;
+		top: 0;
+		left: 0;
+	}
+}
+/*# アニメーション
+-----------------------------------*/
+
+.p-service-detail__area:hover .p-service-detail__subtitle::before {
+	@include mq('tab') {
+		-webkit-animation: border_anim01 0.3s linear forwards;
+		animation: border_anim01 0.3s linear forwards;
+	}
+}
+.p-service-detail__title {
+	margin-top: rem(7);
+	font-size: rem(22);
+	font-weight: bold;
+	letter-spacing: 0.15em;
+	line-height: 1.4583;
+	color: #0a0666;
+	text-align: left;
+	position: relative;
+	@include mq('tab') {
+		font-size: rem(32);
+		letter-spacing: 0.05em;
+		line-height: 1.3333;
+		color: #11132a;
+	}
+}
+.p-service-detail__description {
+	font-size: rem(14);
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	line-height: 1.75;
+	color: #11132a;
+	text-align: left;
+	@include mq('tab') {
+		font-size: rem(20);
+		letter-spacing: 0.05em;
+		line-height: 1.5;
+	}
+}
+.p-service-detail__title + .p-service-detail__description {
+	margin-top: rem(40);
+}
+.p-service-detail__link-text {
+	font-size: rem(9);
+	letter-spacing: 0.2em;
+	line-height: 2;
+	color: #0a0666;
+	margin-right: rem(4);
+}
+.p-service-detail__links-wrapper01 {
+	position: relative;
+}
+.p-service-detail__link-wrapper01 {
+	position: absolute;
+	content: '';
+	top: rem(3);
+	right: 0;
+}
+.p-service-detail__link-wrapper02 {
+	position: absolute;
+	content: '';
+	top: rem(53);
+	right: 0;
+}
+.p-service-detail__link {
+	display: flex;
+	align-items: center;
+}
+.p-service-detail__link-arrow {
+	display: inline-block;
+	border: rem(2) solid #171375;
+	border-radius: 50%;
+	background: -moz-linear-gradient(left, #171375, #4843ae);
+	background: -webkit-linear-gradient(left, #171375, #4843ae);
+	background: linear-gradient(to right, #171375, #4843ae);
+	width: rem(15);
+	height: rem(15);
+	position: relative;
+}
+.p-service-detail__link-arrow::after {
+	position: absolute;
+	content: '';
+	display: block;
+	margin: auto 0;
+	width: rem(6);
+	height: rem(6);
+	border-top: solid rem(2) #fff;
+	border-right: solid rem(2) #fff;
+	-webkit-transform: rotate(45deg);
+	transform: translate(-20%, -45%) rotate(45deg);
+	top: 45%;
+	right: 20%;
+}
+.p-service-detail__links-wrapper02 {
+	@include mq('tab') {
+		align-items: center;
+		justify-content: left;
+		margin-top: rem(19);
+	}
+}
+.p-service-detail__link-wrapper {
+	@include mq('tab') {
+		border-radius: rem(2);
+		border: rem(1) solid #0a0666;
+	}
+}
+.p-service-detail__link-wrapper:first-child {
+	@include mq('tab') {
+		margin-right: rem(15);
+	}
+}
+.p-service-detail__link-text--pc {
+	@include mq('tab') {
+		font-size: rem(16);
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		line-height: 1.5;
+		color: #0a0666;
+		padding: rem(7) rem(21);
+		transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-webkit-transition: all 0.3s ease;
+	}
+}
+.p-service-detail__link-text--pc:hover {
+	background-color: #0a0666;
+	color: #fff;
+}

@@ -1,0 +1,91 @@
+.c-header-contact {
+	background: -moz-linear-gradient(left, #171375, #4843ae);
+	background: -webkit-linear-gradient(left, #171375, #4843ae);
+	background: linear-gradient(to right, #171375, #4843ae);
+	max-width: rem(57);
+	width: 100%;
+	height: inherit;
+	text-align: center;
+	padding-left: rem(11);
+	padding-right: rem(10);
+	overflow: hidden;
+	position: relative;
+	@include mq('tab') {
+		max-width: rem(170);
+		padding-left: rem(34);
+		padding-right: rem(34);
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		transition: all 1s ease;
+	}
+	@media (max-width: 374px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.c-header-contact:hover {
+	opacity: 0.7;
+	@include mq('tab') {
+		opacity: 1;
+	}
+}
+.c-header-contact__icon-wrapper {
+	height: 50%;
+	position: relative;
+	z-index: 30;
+}
+.c-header-contact__icon {
+	max-width: rem(11.12);
+	width: 100%;
+	padding-top: rem(9);
+	@include mq('tab') {
+		max-width: rem(20.78);
+		padding-top: rem(25.8);
+	}
+}
+
+.c-header-contact__text {
+	font-size: rem(8);
+	font-weight: bold;
+	white-space: nowrap;
+	color: #fff;
+	position: relative;
+	z-index: 20;
+	@include mq('tab') {
+		font-size: rem(15);
+	}
+}
+// /*# アニメーション用
+// -----------------------------------*/
+.l-header-contact__bg {
+	z-index: 10;
+	color: #fff;
+	position: relative;
+}
+.l-header__contact:hover .l-header-contact__bg {
+	color: #fff;
+}
+/*== 背景が流れる（左から右） */
+.l-header-contact-bgleft:before {
+	@include mq('tab') {
+		content: '';
+		/*絶対配置で位置を指定*/
+		position: absolute;
+		top: 0;
+		left: 0;
+		/*色や形状*/
+		background: #171375; /*背景色*/
+		width: 100%;
+		height: 100%;
+		/*アニメーション*/
+		transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+		-moz-transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+		-webkit-transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+		transform: scale(0, 1);
+		transform-origin: left top;
+	}
+}
+/*hoverした際の形状*/
+.l-header-contact-bgleft:hover:before {
+	transform: scale(1, 1);
+}

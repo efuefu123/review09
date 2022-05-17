@@ -1,0 +1,19 @@
+//==============================================================
+// fadeIn
+//==============================================================
+
+.fade-in {
+	animation-name: fadeInAnime;
+	animation-duration: 0.8s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes fadeInAnime {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

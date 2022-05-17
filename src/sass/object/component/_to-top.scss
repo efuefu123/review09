@@ -1,0 +1,23 @@
+.to-top {
+	width: rem(50);
+	height: rem(50);
+	background: $primary-color;
+	position: fixed;
+	bottom: rem(75);
+	right: rem(30);
+	transition: all 0.3s ease 0s;
+	z-index: 79;
+	border: rem(1) solid #fff;
+	border-radius: 50%;
+	opacity: 1;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.to-top__button {
+	color: #fff;
+	font-size: rem(24);
+	font-weight: 700;
+}

@@ -1,0 +1,44 @@
+.c-header-document-request {
+	max-width: rem(57);
+	width: 100%;
+	height: 100%;
+	border-left: rem(1) solid rgba(17, 19, 42, 0.05);
+	text-align: center;
+	padding-left: rem(10);
+	padding-right: rem(11.5);
+	background-color: #f9f9f9;
+	@include mq('tab') {
+		max-width: rem(170);
+		border-left: rem(1) solid rgba(10, 6, 102, 0.5);
+		padding-left: rem(52);
+		padding-right: rem(52);
+	}
+	@media (max-width: 374px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.c-header-document-request:hover {
+	opacity: 0.7;
+}
+.c-header-document-request__icon-wrapper {
+	height: 50%;
+}
+.c-header-document-request__icon {
+	max-width: rem(15.69);
+	width: 100%;
+	padding-top: rem(6);
+	@include mq('tab') {
+		max-width: rem(28.22);
+		padding-top: rem(21.8);
+	}
+}
+.c-header-document-request__text {
+	font-size: rem(8);
+	font-weight: bold;
+	white-space: nowrap;
+	color: #0a0666;
+	@include mq('tab') {
+		font-size: rem(15);
+	}
+}

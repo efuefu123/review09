@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<%- include('./common/_head') %>
+	<body>
+		<%- include('./common/_header') %>
+		<main>
+			<section class="p-service">
+				<div class="p-service__mv c-lower-mv wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+					<figure class="p-service__mv-wrapper c-lower-mv__image-wrapper">
+						<picture class="p-service-mv__image c-lower-mv__image">
+							<source srcset="../images/service/service-mv.jpg" media="(min-width: 768px)" />
+							<img src="../images/service/sp-service-mv.jpg" alt="サービスメインビュー" alt="アドネス株式会社サービスメインビュー" />
+						</picture>
+					</figure>
+					<h1 class="c-lower-mv__title">サービス<br /><span class="c-lower-mv__subtitle">Service</span></h1>
+				</div>
+				<div class="p-service__container">
+					<div class="c-breadcrumb">
+						<p class="c-breadcrumb__home">ホーム</p>
+						<p class="c-breadcrumb__service">サービス</p>
+					</div>
+					<div class="p-service__content l-inner">
+						<div class="p-service__title-wrapper">
+							<p class="p-service__title">Policy</p>
+							<p class="p-service__lead">
+								<span class="js-border-yellow">
+									<span class="u-appear-tab">「&nbsp;</span>全てのお客様に<br class="u-hidden-tab" />最適なSNS戦略を<span class="u-appear-tab">&nbsp;」</span></span
+								>
+							</p>
+						</div>
+						<div class="p-service__banner-wrapper u-appear-tab--flex wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+							<a class="p-service-banner" href="#service01">
+								<p class="p-service-banner__title">SNSマーケティング支援事業</p>
+								<p class="p-service-banner__lead">
+									SNSマーケティングを教える<br class="u-appear-tab">オンラインコミュニティ
+								</p>
+							</a>
+							<a class="p-service-banner" href="#service02">
+								<p class="p-service-banner__title">SNS人材育成事業</p>
+								<p class="p-service-banner__lead">
+									SNSマーケティングに強い<br class="u-appear-tab">人材の育成
+								</p>
+							</a>
+						</div>
+						<div class="p-service__detail p-service-detail wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+							<div id="service01" class="p-service-detail__area">
+								<div class="p-service-detail__content">
+									<h2 class="p-service-detail__subtitle">SNSマーケティング支援事業</h2>
+									<p class="p-service-detail__title">センサーズ for Business</p>
+									<p class="p-service-detail__description">
+										企業のニーズに合ったSNS戦略を徹底サポートいたします。
+										<div class="p-service-detail__links-wrapper01 u-hidden-tab">
+											<p class="p-service-detail__description p-service-detail__description01">導入事例はこちらからご覧下さい。</p>
+											<div class="p-service-detail__link-wrapper p-service-detail__link-wrapper01 c-util-link">
+												<a href="./case.html" class="p-service-detail__link c-util-link__link">
+													<p class="p-service-detail__link-text">導入事例</p>
+													<span class="p-service-detail__link-arrow"></span>
+												</a>
+											</div>
+											<p class="p-service-detail__description p-service-detail__description02">センサーズ for businessを詳しく見たい方はこちら。</p>
+											<div class="p-service-detail__link-wrapper p-service-detail__link-wrapper02 c-util-link">
+												<a href="" class="p-service-detail__link c-util-link__link">
+													<p class="p-service-detail__link-text">センサーズ</p>
+													<span class="p-service-detail__link-arrow"></span>
+												</a>
+											</div>
+										</div>
+										<div class="p-service-detail__links-wrapper02 u-appear-tab--flex">
+											<div class="p-service-detail__link-wrapper">
+												<a href="./case.html" class="p-service-detail__link">
+													<p class="p-service-detail__link-text--pc">導入事例はこちら</p>
+												</a>
+											</div>
+											<div class="p-service-detail__link-wrapper">
+												<a href="" class="p-service-detail__link">
+													<p class="p-service-detail__link-text--pc">センサーズ for Businessの詳細はこちら</p>
+												</a>
+											</div>
+										</div>
+									</p>
+								</div>
+							</div>
+							<div id="service02"  class="p-service-detail__area">
+								<div class="p-service-detail__content">
+									<h2 class="p-service-detail__subtitle">SNS人材育成事業</h2>
+									<p class="p-service-detail__title">SNSプランナー養成講座</p>
+									<p class="p-service-detail__description">企業のSNSアカウント運用から、SNSに最適化された販売導線の構築までできる人材を育成するサービスです。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="c-cta"><%- include('./common/_cta-document-request') %> <%- include('./common/_cta-contact') %></section>
+				<%- include('./common/_footer') %>
+			</section>
+		</main>
+	</body>
+</html>

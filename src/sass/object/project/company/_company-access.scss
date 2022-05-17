@@ -1,0 +1,45 @@
+.p-company-access-ja {
+	font-size: rem(24);
+	text-align: center;
+	@include mq('tab') {
+		font-size: rem(36);
+	}
+}
+.p-company-access-en {
+	margin-top: rem(4);
+	text-align: center;
+	@include mq('tab') {
+		margin-top: rem(8);
+	}
+}
+.p-company-access__text {
+	margin-top: rem(16);
+	font-size: rem(14);
+	letter-spacing: 0.05em;
+	line-height: 1.5714;
+	font-weight: bold;
+	@include mq('tab') {
+		margin-top: rem(25);
+		font-size: rem(22);
+		line-height: 1.7272;
+	}
+}
+.p-company-access__map-wrapper {
+	margin-top: rem(20);
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 73.8872%;
+	@include mq('tab') {
+		margin-top: rem(29);
+		padding-top: 34.1191%;
+	}
+}
+.p-company-access__map-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: rem(1) solid #707070;
+}

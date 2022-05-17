@@ -1,0 +1,103 @@
+.p-case__banner-wrapper {
+	width: 100%;
+	@include mq('tab') {
+		margin: 0 auto;
+		max-width: rem(1100);
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: rem(18);
+		row-gap: rem(10);
+	}
+}
+
+.p-case-banner {
+	display: block;
+	background-color: #fff;
+	border: rem(2) solid #0a0666;
+	width: 100%;
+	position: relative;
+	border-radius: rem(5);
+	padding-top: rem(10);
+	padding-bottom: rem(17);
+	max-width: rem(351);
+	height: rem(89);
+	margin: 0 auto;
+	@include mq('tab') {
+		padding-top: rem(23);
+		padding-bottom: rem(24);
+		max-width: rem(354);
+		height: rem(126);
+		transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-webkit-transition: all 0.3s ease;
+	}
+}
+.p-case-banner:after {
+	position: absolute;
+	content: '';
+	top: 40%;
+	right: 7%;
+	width: rem(14);
+	height: rem(14);
+	border-top: solid rem(3) #0a0666;
+	border-right: solid rem(3) #0a0666;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+	@include mq('tab') {
+	}
+}
+.p-case-banner:not(:first-child) {
+	margin-top: rem(17);
+	@include mq('tab') {
+		margin-top: 0;
+	}
+}
+// .p-case-banner:not(:last-child) {
+// 	@include mq('tab') {
+// 		margin-right: rem(20);
+// 	}
+// }
+.p-case-banner__title {
+	font-family: 'Futura PT';
+	color: #0a0666;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	font-size: rem(29);
+	letter-spacing: 0.025em;
+	line-height: 1.4;
+	font-weight: 400;
+	@include mq('tab') {
+		font-size: rem(32);
+		line-height: 1.3;
+	}
+}
+.p-case-banner__lead {
+	color: #0a0666;
+	font-weight: bold;
+	text-align: center;
+	margin-top: rem(1);
+	font-size: rem(14);
+	letter-spacing: 0.05em;
+	line-height: 1;
+	@include mq('tab') {
+		margin-top: rem(14);
+		font-size: rem(16);
+		letter-spacing: 0.05em;
+		line-height: 1.5;
+	}
+}
+
+/*# アニメーション
+-----------------------------------*/
+.p-case-banner:hover {
+	background-color: #0a0666;
+}
+.p-case-banner:hover::after {
+	border-top: solid rem(3) #fff;
+	border-right: solid rem(3) #fff;
+}
+.p-case-banner:hover .p-case-banner__title,
+.p-case-banner:hover .p-case-banner__lead {
+	color: #fff;
+}

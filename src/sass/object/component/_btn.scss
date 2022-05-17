@@ -1,0 +1,20 @@
+.c-btn {
+	background: -moz-linear-gradient(left, #171375, #4843ae);
+	background: -webkit-linear-gradient(left, #171375, #4843ae);
+	background: linear-gradient(to right, #171375, #4843ae);
+	color: white;
+	font-size: rem(12);
+	border-radius: rem(50);
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-transition: ease 0.5s;
+	-moz-transition: ease 0.5s;
+	transition: ease 0.5s;
+	@include mq('tab') {
+		font-size: rem(25);
+	}
+}
+
+.c-btn:hover {
+	opacity: 0.85;
+}
