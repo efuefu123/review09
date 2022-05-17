@@ -1,0 +1,17 @@
+.c-util-company-title-ja {
+	font-size: rem(18);
+	font-weight: bold;
+	line-height: 1;
+	@include mq('tab') {
+		font-size: rem(27);
+	}
+}
+.c-util-company-title-en {
+	font-family: 'Futura PT';
+	font-size: rem(13);
+	letter-spacing: 0.09em;
+	line-height: 1.7692;
+	@include mq('tab') {
+		font-size: rem(22);
+	}
+}

@@ -1,0 +1,77 @@
+.u-hidden-pc {
+	// PC時非表示
+	@include mq('pc') {
+		display: none;
+	}
+}
+
+.u-hidden-tab {
+	// タブレット以上非表示
+	@include mq('tab') {
+		display: none;
+	}
+}
+.u-hidden-sp {
+	// タブレット以上非表示
+	@include mq('sp') {
+		display: none;
+	}
+}
+
+.u-appear-pc {
+	// タブレットC以下非表示
+	@include mq('pc') {
+		display: inline;
+	}
+	@include mq('tab') {
+		display: none;
+	}
+	@include mq('tab-or-less') {
+		display: none;
+	}
+}
+
+.u-appear-tab {
+	// タブレット時未満非表示
+	@include mq('tab') {
+		display: inline;
+	}
+	@include mq('tab-or-less') {
+		display: none;
+	}
+}
+.u-appear-tab--block {
+	// タブレット時未満非表示
+	@include mq('tab') {
+		display: block;
+	}
+	@include mq('tab-or-less') {
+		display: none;
+	}
+}
+.u-appear-tab--flex {
+	// タブレット時未満非表示
+	@include mq('tab') {
+		display: flex;
+	}
+	@include mq('tab-or-less') {
+		display: none;
+	}
+}
+
+.u-appear-sp {
+	// スマホ時未満非表示
+	@include mq('sp') {
+		display: inline;
+	}
+	@include mq('sp-or-less') {
+		display: none;
+	}
+}
+
+.u-appear-500 {
+	display: none;
+	@media (min-width: 500px) {
+		display: inline-block;
+	}
+}

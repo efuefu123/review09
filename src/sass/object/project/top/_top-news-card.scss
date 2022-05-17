@@ -1,0 +1,39 @@
+.p-top-news-card {
+	max-width: rem(308);
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+	transition: 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+}
+
+.p-top-news-card__image {
+	object-fit: cover;
+	object-position: center;
+	height: rem(172);
+}
+.p-top-news-card__body {
+	margin-top: rem(15);
+}
+.p-top-news-card__text {
+	font-size: rem(16);
+	letter-spacing: 0.15em;
+	line-height: 1.5625;
+	@include mq('tab') {
+		font-size: rem(18);
+		letter-spacing: 0.1em;
+		line-height: 1.6667;
+	}
+}
+.p-top-news-card__date {
+	font-size: rem(10);
+	letter-spacing: 0.15em;
+	font-family: 'Futura PT';
+	font-weight: bold;
+	line-height: 1;
+	margin-top: rem(-3);
+	@include mq('tab') {
+		margin-top: rem(21);
+	}
+}

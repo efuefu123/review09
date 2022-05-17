@@ -1,0 +1,28 @@
+@keyframes border_anim01 {
+	0% {
+		width: 0%;
+	}
+	30% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+.js-border-yellow {
+	background: linear-gradient(#f7f012, #f7f012) 0 100%/100% 25% no-repeat;
+	@include mq('tab') {
+		background: linear-gradient(#f7f012, #f7f012) 0 100%/0 25% no-repeat;
+		background-repeat: no-repeat;
+		z-index: -1;
+		text-decoration: none;
+		-webkit-transition: all 0.7s ease;
+		-moz-transition: all 0.7s ease;
+		transition: all 0.7s ease;
+	}
+}
+.js-border-yellow.is-active {
+	@include mq('tab') {
+		background-size: 100% 25%;
+	}
+}

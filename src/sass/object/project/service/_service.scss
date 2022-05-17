@@ -1,0 +1,79 @@
+.p-service__container {
+	padding-bottom: rem(61);
+	@include mq('tab') {
+		padding-bottom: rem(381);
+		background-image: url(../images/common/blueline_bottomboth.png);
+		background-position: right 0% bottom -0.1%;
+		background-repeat: no-repeat;
+		background-size: 100% rem(170);
+		width: 100vw;
+		margin: 0 calc(50% - 50vw);
+	}
+}
+.p-service__content {
+	margin-top: rem(49);
+	@include mq('tab') {
+		margin: rem(59) auto 0;
+		max-width: rem(1182);
+		width: 100%;
+	}
+}
+.p-service__title-wrapper {
+	text-align: center;
+	width: 100%;
+}
+.p-service__title {
+	font-family: 'Futura PT';
+	display: inline-block;
+	font-size: rem(15);
+	letter-spacing: 0.1em;
+	line-height: 1.3333;
+	color: #0a0666;
+	position: relative;
+	@include mq('tab') {
+		font-size: rem(30);
+		font-weight: 600;
+	}
+}
+.p-service__title::after {
+	position: absolute;
+	content: '';
+	height: rem(1);
+	background-color: #0a0666;
+	width: 130%;
+	bottom: rem(-8);
+	left: 50%;
+	transform: translateX(-50%);
+	@include mq('tab') {
+		width: 80%;
+		height: rem(2);
+	}
+}
+.p-service__lead {
+	margin-top: rem(48);
+	font-size: rem(26);
+	color: #0a0666;
+	letter-spacing: 0.15em;
+	line-height: 1.8;
+	font-weight: 700;
+	@include mq('tab') {
+		font-size: rem(38);
+		letter-spacing: 0.1em;
+		line-height: 1.3;
+	}
+}
+.p-service__banner-wrapper {
+	@include mq('tab') {
+		margin-top: rem(123);
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.p-service__detail {
+	margin: rem(35) calc(50% - 50vw) 0;
+	width: 100vw;
+	margin-top: rem(115);
+	@include mq('tab') {
+		margin-top: rem(200);
+	}
+}

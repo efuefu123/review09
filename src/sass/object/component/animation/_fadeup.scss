@@ -1,0 +1,23 @@
+//==============================================================
+// fadeUp
+//==============================================================
+
+.fade-up {
+	@include mq(tab) {
+		animation-name: fadeUpAnime;
+		animation-duration: 0.8s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+	}
+}
+
+@keyframes fadeUpAnime {
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

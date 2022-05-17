@@ -1,0 +1,20 @@
+.c-drawer-menu-overlay {
+	display: none;
+	transition: all 0.5s 0s ease;
+	-moz-transition: all 0.5s 0s ease;
+	-webkit-transition: all 0.5s 0s ease;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 20;
+	@include mq('tab') {
+		display: none;
+	}
+}
+.c-drawer-menu-overlay.is-active {
+	display: block;
+}

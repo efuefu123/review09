@@ -1,0 +1,75 @@
+.c-drawer-icon {
+	cursor: pointer;
+	max-width: rem(57);
+	width: 100%;
+	height: 100%;
+	background-color: #11132a;
+	display: block;
+	height: rem(45);
+	z-index: 50;
+	position: fixed;
+	top: 0;
+	right: 0;
+	@include mq('tab') {
+		display: none;
+	}
+}
+.c-drawer-icon.is-open {
+	background-color: #dcdce1;
+}
+.c-drawer-icon__bars {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: rem(18.43);
+	height: rem(16.62);
+}
+.c-drawer-icon__bar1,
+.c-drawer-icon__bar2,
+.c-drawer-icon__bar3 {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: rem(2);
+	background: #fff;
+	transition: all 0.25s 0s ease;
+	-moz-transition: all 0.25s 0s ease;
+	-webkit-transition: all 0.25s 0s ease;
+}
+.c-drawer-icon__bar1 {
+	top: 0;
+}
+.c-drawer-icon__bar2 {
+	top: 50%;
+	transform: translateY(-50%);
+}
+.c-drawer-icon__bar3 {
+	bottom: 0;
+}
+
+.c-drawer-icon.is-open .c-drawer-icon__bar1,
+.c-drawer-menu.is-active .c-drawer-menu__icon .c-drawer-icon__bar1 {
+	background: #11132a;
+	top: 50%;
+	left: rem(-2);
+	// transform: translateY(-50%);
+	transform: rotate(45deg);
+	width: 120%;
+}
+.c-drawer-icon.is-open .c-drawer-icon__bar2,
+.c-drawer-menu.is-active .c-drawer-menu__icon .c-drawer-icon__bar2 {
+	// display: none;
+	transform: translateX(-16px);
+	opacity: 0;
+}
+.c-drawer-icon.is-open .c-drawer-icon__bar3,
+.c-drawer-menu.is-active .c-drawer-menu__icon .c-drawer-icon__bar3 {
+	background: #11132a;
+	top: 50%;
+	left: rem(-2);
+	// transform: translateY(-50%);
+	transform: rotate(-45deg);
+	width: 120%;
+}

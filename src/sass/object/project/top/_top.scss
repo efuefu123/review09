@@ -1,0 +1,25 @@
+.p-top__mv {
+	margin-top: rem(45);
+	@include mq('tab') {
+		margin-top: rem(100);
+	}
+}
+
+.p-top_service {
+	margin-top: rem(55);
+	@include mq('tab') {
+		margin-top: rem(141);
+	}
+}
+.p-top_news {
+	padding-top: rem(71.8);
+	@include mq('tab') {
+		padding-top: rem(88);
+	}
+}
+.p-top_case {
+	margin-top: rem(58.8);
+	@include mq('tab') {
+		margin-top: rem(150.6);
+	}
+}

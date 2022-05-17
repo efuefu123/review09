@@ -1,0 +1,36 @@
+// 色
+$background: #f0f2f6; // 背景
+$text-color: #11132a; // テキスト色
+$primary-color: #171375;
+
+// マウスホバー
+$opacity: 0.7; // 透過度
+
+// フォント
+$font-family-base: '源ノ角ゴシック Regular', '源ノ角ゴシック', 'Noto Sans JP', sans-serif; // ベースフォント
+$font-size-base: 16px; // ベースフォントサイズ
+$font-weight-base: 400; // ベースフォントウェイト
+$lh: 2; // ベース行間
+
+// ---
+// レイアウト
+// ---
+$l-sp-less: 375px;
+$l-sp: 376px;
+$l-tab-less: 767px;
+$l-tab: 768px; // タブレットサイズ
+$l-inner: 1358px; // インナー幅
+$l-pc: 1440px; // パソコン幅
+
+// ブレークポイント（PC基準）
+$breakpoints: (
+	'sp': 'screen and (min-width: 376px)',
+	'tab': 'screen and (min-width: #{$l-tab})',
+	'pc': 'screen and (min-width: #{$l-inner})',
+	'lg': 'screen and (min-width: #{$l-pc})',
+	'tab-or-less': 'screen and (max-width: #{$l-tab-less})',
+	'sp-or-less': 'screen and (max-width: #{$l-sp-less})',
+);
+
+$padding-pc: 41px; // タブレット時の余白
+$padding-sp: 10px; // スマホ時の余白

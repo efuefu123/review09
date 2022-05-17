@@ -1,0 +1,20 @@
+.p-contact__content {
+	max-width: rem(500);
+	width: 100%;
+	margin-top: rem(45);
+	padding-bottom: rem(49);
+	@include mq('tab') {
+		max-width: rem(1100);
+		margin-top: rem(99);
+		padding-bottom: rem(125);
+	}
+}
+.p-contact__text {
+	text-align: center;
+	font-size: rem(16);
+	padding-bottom: rem(25);
+	@include mq('tab') {
+		font-size: rem(20);
+		padding-bottom: rem(35);
+	}
+}

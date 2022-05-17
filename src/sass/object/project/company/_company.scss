@@ -1,0 +1,131 @@
+.p-company__container {
+	width: 100vw;
+	margin: 0 calc(50% - 50vw);
+	background-image: url(../images/common/blueline_bottomboth.png);
+	background-position: right 0% bottom 0%;
+	background-repeat: no-repeat;
+	background-size: 100% rem(70);
+	@include mq('tab') {
+		background-size: 100% rem(170);
+	}
+}
+.p-company__content {
+	width: 100%;
+	padding-bottom: rem(150);
+	@include mq('tab') {
+		padding: rem(86) rem(129) rem(269) rem(129);
+		position: relative;
+	}
+}
+.p-company__content-01 {
+	width: 100vw;
+	margin: 0 calc(50% - 50vw);
+
+	background-image: none;
+	@include mq('tab') {
+		position: relative;
+	}
+}
+.p-company__content-01::before {
+	background-image: none;
+	@include mq('tab') {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 50%;
+		top: rem(-270);
+		left: 0;
+		background-image: url(../images/common/blueline_topleft-pc.png);
+		background-position: left 80% top rem(50);
+		background-repeat: no-repeat;
+		background-size: 120% rem(700);
+		z-index: -10;
+	}
+}
+.p-company__content-01-container {
+	background-color: #fff;
+	padding: rem(47) rem(27) rem(200);
+	border-bottom: rem(5) solid #171375;
+	margin: 0 auto;
+	max-width: rem(500);
+	width: 100%;
+	background-image: url(/../images/common/blueline_topright-sp.png);
+	background-position: right 0% top 0%;
+	background-repeat: no-repeat;
+	background-size: 101% rem(150);
+	background-attachment: local;
+	@include mq('tab') {
+		padding: rem(166) rem(118) rem(655);
+		border: rem(2) solid #0a0666;
+		max-width: rem(1100);
+		background-image: none;
+		background-image: url(../images/common/blueline_bottomright.png);
+		background-position: right rem(-70) bottom rem(-45);
+		background-repeat: no-repeat;
+		background-size: 80% rem(300);
+	}
+}
+.p-company__vision {
+	margin-top: rem(30);
+	@include mq('tab') {
+		margin-top: rem(64);
+	}
+}
+.p-company__value {
+	margin-top: rem(30);
+	@include mq('tab') {
+		margin-top: rem(62);
+	}
+}
+.p-company__content-02 {
+	margin-top: rem(59);
+	width: 100%;
+	padding-left: rem(25);
+	padding-right: rem(25);
+	@include mq('tab') {
+		width: 100vw;
+		margin: rem(159) calc(50% - 50vw) 0;
+		background-color: #fff;
+		padding: rem(105) rem(170) rem(135);
+		position: relative;
+		z-index: 0;
+	}
+}
+.p-company__content-02::before {
+	background-image: none;
+	// @include mq('tab') {
+	// 	position: absolute;
+	// 	content: '';
+	// 	width: 100%;
+	// 	height: 50%;
+	// 	top: rem(150);
+	// 	left: 0;
+	// 	// background-image: url(../images/common/blueline_topleft-pc.png);
+	// 	// background-position: left 80% top rem(-35);
+	// 	// background-repeat: no-repeat;
+	// 	// background-size: 120% rem(1000);
+	// 	z-index: -10;
+	// }
+}
+.p-company__content-03 {
+	width: 100vw;
+	margin: 0 calc(50% - 50vw);
+	background-color: #fff;
+	margin-top: rem(72);
+	padding: rem(33) rem(10) rem(24);
+	@include mq('tab') {
+		width: 100%;
+		margin: rem(166) auto 0;
+		padding: rem(86) rem(80) rem(72);
+		border: rem(2) solid #0a0666;
+	}
+}
+.p-company__content-04 {
+	width: 100%;
+	margin: rem(90) auto 0;
+	padding: rem(0) rem(9) rem(0) rem(10);
+	@include mq('tab') {
+		margin-top: rem(157);
+		padding: 0;
+	}
+}

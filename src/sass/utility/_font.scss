@@ -1,0 +1,27 @@
+// .u-text-yellowline {
+// 	background: linear-gradient(transparent 70%, #f7f012 70%, #f7f012 95%, transparent 95%);
+// }
+.u-text-underline {
+	border-bottom: rem(3) solid #0a0666;
+}
+.u-textaligncenter {
+	text-align: center;
+}
+.u-font-maincolor {
+	color: #0a0666;
+}
+.u-font-weight700 {
+	font-weight: 700;
+}
+.u-text-bluebackground {
+	@include mq('tab') {
+		color: #fff;
+		background: -moz-linear-gradient(left, #171375, #4843ae);
+		background: -webkit-linear-gradient(left, #171375, #4843ae);
+		background: linear-gradient(to right, #171375, #4843ae);
+		margin-left: rem(4);
+		padding-left: rem(8);
+		padding-right: rem(8);
+		padding-bottom: rem(2);
+	}
+}
